@@ -33,11 +33,11 @@ textarea {
   display: block;
   width: 100%;
   font-family: cursive;
-  padding: 10px 15px;
+  padding: 20px;
   font-size: 1rem;
   line-height: 1.5rem;
-  border-radius: 0.25rem;
-  border: 2px solid gainsboro;
+  border-left: 10px solid gainsboro;
+  border-right: 10px solid gainsboro;
 }
 
 textarea:focus {
@@ -51,4 +51,19 @@ code {
   color: #c7254e;
   background-color: #f9f2f4;
   border-radius: 4px;
+}
+
+@media all and (max-width: 800px) {
+  body {
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+  .textarea {
+    border-top: 10px solid gainsboro;
+    border-bottom: 10px solid gainsboro;
+    border-left: none;
+    border-right: none;
+    height: 500px;
+  }
 }
