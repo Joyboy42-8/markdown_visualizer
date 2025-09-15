@@ -58,13 +58,11 @@ code {
   body {
     min-height: 100vh;
     overflow: auto;
+    padding: 10px;
   }
 
   .textarea {
-    border-top: 10px solid gainsboro;
-    border-bottom: 10px solid gainsboro;
-    border-left: none;
-    border-right: none;
+    border: 10px solid gainsboro;
     height: 500px;
   }
 }

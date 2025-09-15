@@ -9,7 +9,8 @@ export default function App() {
   // Donner le focus
   useEffect(() => {
     texte.current.focus();
-  }, [])
+    setContenu(texte.current.value);
+  }, []);
 
   return (
     <>
